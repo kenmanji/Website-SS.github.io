@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(90deg,#30389D,#01be64);
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 1%;
+  padding-right: 5%;
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.479);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color:#ffffff;
+}
+
+.main-container {
+    display: flex;
+    max-width: 50%;
+    max-height: 80%;
+}
+
+.judul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -3px;
+}
+
+.akreditasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar .Search-form {
+  width: 90%;
+  right: 2rem;
+}
+
+.Navbar .Navigation {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-right: 3em;
+  list-style-type: none;
+}
+
+.Navbar .Navigation a  {
+  display: inline-block;
+  color: black;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+
+.Navbar .Navigation a:hover {
+ color: #0066ff;
+}
+
+.Navbar .Navigation a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.1rem solid #03af9e;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.Navbar .Navigation a:hover::after {
+  transform: scaleX(1);
+}
+
+.Navbar .Tambahan {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  list-style-type: none;
+  margin-right: 1rem;
+}
+
+.Navbar .Tambahan a  {
+  display: inline-block;
+  color: black;
+  font-size: 1rem;
+  margin: 0 -0.5rem;
+}
+
+.Navbar .Tambahan a:hover {
+  color: #0050fe;
+ }
+ 
+ .Navbar .Tambahan a::after {
+   content: '';
+   display: block;
+   padding-bottom: 0.3rem;
+   border-bottom: 0.1rem solid #4ba2fe;
+   transform: scaleX(0);
+   transition: 0.2s linear;
+ }
+ 
+ .Navbar .Tambahan a:hover::after {
+   transform: scaleX(1);
+ }
+
+#hamburger-menu {
+  display: none;
+  padding: 4px 0;
+}
+
+.Navbar .Search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.Navbar .Search-form.active {
+  transform: scaleY(1);
+}
+
+.Navbar .Search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  color: black;
+  padding: 1rem;
+}
+
+.Navbar .Search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: black;
+}
+
+.Hero {
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+  
+  .Hero .Content {
+    padding: 1.4rem 7%;
+    max-width: 100rem;
+  }
+  
+  .Hero h1 {
+    font-size: 2.3em;
+    line-height: 2.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    margin-top: 10rem;
+    margin-left: 22rem;
+  }
+  
+  .Hero .Content p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.2;
+    max-width: 60rem;
+    margin-left: 6.5rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    font-weight: 300;
+  }
+
+  .Hero .Content a {
+    display: block;
+  }
+  
+  .Hero .Content a {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: 6.5rem;
+    line-height: 1.2;
+    max-width: 33rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    font-weight: 300;
+  }
+
+  .Hero .Content::after {
+    content: '';
+  display: block;
+  position: absolute;
+  width: 82%;
+  height: 20%;
+  bottom: 0%;
+  margin-left: 4rem;
+  background: linear-gradient(0deg, #ffffff 1%, #016fbe00 0%);
+  }
+
+  .hero {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .hero a1  {
+    color: white;
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-left: 10rem;
+    line-height: 1.2;
+    max-width: 33rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    font-weight: 300;
+  }
+  
+
+  .Hero div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    margin-left: 12rem;
+    width: 70%;
+    height: 70%;
+  }
+
+footer {
+    background-image: url("BG\ Fix.png");
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  footer .Ikuti {
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  }
+  
+  footer .Sosial {
+    padding: 1rem 0
+  }
+  
+  footer .Sosial a {
+    color: white;
+    margin: 1rem;
+    margin-bottom: 20rem;
+  }
+  
+  footer .Sosial a:hover {
+  color: gray;
+  }
+  
+  footer .Links {
+    margin-top: 1.5rem;
+  }
+  
+  .Garis {
+    color: gainsboro;
+  }
+  
+  footer .Links a {
+    color: white;
+    padding: 0.7rem 1rem;
+  }
+  
+  footer .Credit {
+    margin-top: 1rem;
+  }
+  
+  footer .Credit a {
+    color: white;
+    padding: 0.7rem;
+    margin: -0.5rem;
+    font-weight: 700;
+  }
+  
+  footer .Credit p {
+    color: white;
+  }
+
+  @media (max-width : 1100px) {       
+    .Hero h1 {
+     margin-top: 9rem;
+     margin-left: 10rem;
+    }
+
+    .Hero div {
+      margin-left: 10.5rem;
+    }
+}
+
+@media (max-width: 912px) {
+.Navbar .Tambahan a::after {
+  padding-bottom: 0.1rem;
+}
+  .main-container {
+    display: flex;
+    max-width: 70%;
+    max-height: 80%;
+}
+
+  .akreditasi {
+    display: flex;
+  }
+
+  .judul {
+    display: flex;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .Navbar .Navigation {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #4bffa8;
+    width: 13rem;
+    height: 100vh;
+    transition: 0.5s;
+ }
+
+.Navbar .Navigation.active {
+  right: -10%;
+  display: block;
+}
+
+.Navbar .Navigation a {
+  display: block;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1rem
+}
+
+.Navbar .Navigation a::after {
+  transform-origin: 0 0;
+}
+
+.Navbar .Navigation a:hover::after {
+  transform: scaleX(0.3);
+}
+
+.Hero {
+  display: block;
+  min-height: 85vh;
+}
+
+.Hero::after {
+  width: 100%;
+  height: 17%;
+  bottom: 0%;
+}
+
+.Hero .Content h1 {
+  font-size: 180%;
+  margin-top: 0rem;
+  max-width: 50rem;
+}
+
+.Hero .Content p {
+  font-size: 100%;
+  max-width: 50rem;
+}
+
+.Hero .Content a {
+  font-size: 100%;
+}
+
+.Hero div {
+ width: 60%;
+ height: 60%;
+ margin-top: 8rem;
+ margin-left: 8.5rem;
+}
+
+.button {
+  font-size: 12px;
+}
+
+.Visi {
+  display: block;
+}
+
+.Visi .visi h2 {
+  font-size: 200%;
+  margin-left: 0rem;
+  margin-top: 2rem;
+}
+
+.Visi .visi p {
+  font-size: 100%;
+  margin-left: 5rem;
+  margin-bottom: 3rem;
+  max-width: 30rem;
+}
+
+.Visi div {
+  margin-top: 2rem;
+  margin-left: 1.3rem;
+  width: 95%;
+  height: 95%;
+}
+
+.Misi {
+  display: block;
+}
+
+.Misi .misi {
+  max-width: 100rem;
+}
+
+.Misi .misi h3 {
+  margin-top: -1rem;
+  margin-right: -1rem;
+}
+
+.Misi .misi p {
+  display: block;
+  max-width: 50rem;
+  text-align: left;
+}
+
+.Misi .mis {
+  margin-top: -2.5rem;
+}
+
+.Misi .mis p {
+  display: block;
+  margin-left: 3.3rem;
+  margin-top: 3.5rem;
+  max-width: 40rem;
+  text-align: left;
+}
+
+.Misi div {
+  display: block;
+  margin-left: 17rem;
+}
+
+.Menu img {
+  margin-top: 16rem;
+  margin-left: 2.5rem;
+}
+
+.Text {
+  width: 90%;
+  height: 51%;
+  margin-left: 2.5rem;
+  margin-top: 20rem;
+}
+
+.dex {
+  width: 90%;
+  height: 51%;
+  margin-left: 2.5rem;
+  margin-top: 20rem;
+}
+
+.Text h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  margin-left: 3rem;
+}
+
+.Text p {
+  margin-top: 0rem;
+  font-size: 1rem;
+  margin-left: 3rem;
+}
+
+.Kontener .Konten .Text button {
+  margin-left: 2.7rem;
+}
+
+.dex h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  margin-left: 3rem;
+}
+
+.dex p {
+  margin-top: 0rem;
+  font-size: 1rem;
+  margin-left: 3rem;
+}
+
+.Kontener .Konten .dex button {
+  margin-left: 2.7rem;
+}
+
+.Menu a {
+  margin-top: -4rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.Kontak .row {
+  flex-wrap: wrap;
+  height: 48rem;
+  margin-left: 2.5rem;
+}
+
+.Kontak h1 {
+  margin-top: -3rem;
+  margin-left: -1rem;
+}
+
+.Kontak p {
+  margin-left: 5.5rem;
+}
+
+.Kontak .row .map {
+  height: 20rem;
+}
+
+.Hero h1 {
+    margin-top: 10rem;
+    margin-left: 8rem;
+    }
+
+    .Hero .Content p {
+      margin-left: 5rem;
+    }
+
+    .Hero .Content a {
+      margin-left: 5rem;
+    }
+
+.Hero div {
+  margin-top: 3rem;
+}
+}
+
+@media (max-width: 450px) {
+    html {
+      font-size: 80%;
+      }
+  
+    .Navbar .Navigation.active {
+      right: -12%;
+      display: block;
+    }
+  
+    .Navbar .Navigation a::after {
+      padding-bottom: 0.2rem;
+    }
+  
+    .Navbar .Tambahan {
+      gap: 2rem;
+      margin-right: 1rem;
+    }
+  
+    .Hero {
+      min-height: 80vh;
+    }
+  
+    .Hero .Content h1 {
+      font-size: 140%;
+      max-width: 30rem;
+      margin-top: -1rem;
+    }
+    
+    .Hero .Content p {
+      font-size: 80%;
+    }
+    
+    .Hero .Content a {
+      font-size: 80%;
+    }
+  
+    .Hero div {
+      margin-top: 5rem;
+      margin-left: 5rem;
+    }
+  
+    .button {
+      font-size: 10px;
+    }
+  
+    .Hero::after {
+      width: 100%;
+      height: 15%;
+      bottom: 0%;
+    }
+  
+    .Visi .visi {
+      max-width: 30rem;
+    }
+  
+    .Visi div {
+      margin-top: 2rem;
+      margin-left: 11rem;
+    }
+    
+    .Visi .visi h2 {
+      margin-left: 2rem;
+      max-width: 20rem;
+    }
+    
+    .Visi .visi p {
+      font-size: 70%;
+      margin-left: 2rem;
+      max-width: 20rem;
+    }
+  
+    .Visi div {
+      margin-left: 1.5rem;
+      width: 90%;
+      height: 90%;
+    }
+    
+    .Misi .misi h3 {
+      font-size: 2rem;
+    }
+  
+    .Misi .misi p {
+      font-size: 80%;
+      margin-top: 2rem;
+    }
+  
+    .Misi .mis p {
+      font-size: 80%;
+      margin-left: 2rem;
+      margin-top: 3.2rem;
+      max-width: 25rem;
+    }
+  
+    .Misi div {
+      margin-left: 11rem;
+    }
+  
+    .Menu img {
+      margin-top: 10rem;
+      margin-left: 1.5rem;
+    }
+  
+    .Menu a {
+      margin-top: 5rem;
+    }
+  
+    .Prev {
+      margin-left: 2.5rem;
+      margin-top: 15rem;
+    } 
+    
+    .Next {
+      margin-right: 2.3rem;
+      margin-top: 15rem;
+    } 
+  
+    .Text {
+      width: 90%;
+      height: 51%;
+      margin-left: 1.5rem;
+      margin-top: 13rem;
+    }
+    
+    .dex {
+      width: 90%;
+      height: 51%;
+      margin-left: 1.5rem;
+      margin-top: 13rem;
+    }
+    
+    .Text h1 {
+      margin-top: 0rem;
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+    
+    .Text p {
+      margin-top: 0rem;
+      font-size: 0.7rem;
+      margin-left: 2rem;
+      max-width: 15rem;
+    }
+    
+    .Kontener .Konten .Text button {
+      margin-left: 2.7rem;
+    }
+    
+    .dex h1 {
+      margin-top: 0rem;
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+    
+    .dex p {
+      margin-top: 0rem;
+      font-size: 0.7rem;
+      margin-left: 2rem;
+      max-width: 15rem;
+    }
+    
+    .Kontener .Konten .Text button {
+      margin-top: 0rem;
+      margin-left: 2rem;
+      font-size: 6px;
+      padding: 7px;
+      width: 60px;
+     }
+     
+     .Kontener .Konten .dex button {
+      margin-top: 0rem;
+      margin-left: 2rem;
+      font-size: 6px;
+      padding: 7px;
+      width: 60px;
+     }
+  
+    .Kontak h1 {
+      font-size: 2rem;
+      margin-left: 0.5rem;
+    }
+  
+    .Kontak p {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+  
+    .Kontak .row {
+      height: 47rem;
+      margin-left: 1.5rem;
+    }
+  
+    .Kontak .row .form b {
+      text-align: center;
+      font-size: 10px;
+      margin-left: 3rem;
+    }  
+  
+    .Page .dot {
+      height: 10px;
+      width: 10px;
+    }
+  
+    footer .Links a {
+      color: white;
+      padding: 0.7rem 0.5rem;
+    }
+  
+    .Garis {
+      font-size: 70%;
+    }
+
+    .Jadul h1 {
+        padding: 10px;
+        margin-top: 7rem;
+        margin-left: 5rem;
+        font-size: 2rem;
+        width: 20rem;
+        }
+
+        .Hero h1 {
+          margin-top: 7rem;
+          margin-left: 4rem;
+          font-size: 1.5rem;
+          }
+      
+          .Hero .Content p {
+            margin-left: 3rem;
+          }
+      
+          .Hero .Content a {
+            margin-left: 3rem;
+          }
+      
+      .Hero div {
+        margin-top: 3rem;
+      }
+
+      .Hero .Content::after {
+        height: 20%;
+        bottom: 0%;
+        margin-left: 2rem;
+        }
+
+      .hero {
+        margin-left: -5rem;
+    }
+
+    .hero a {
+        font-size: 1rem;
+    }
+    }
+  
