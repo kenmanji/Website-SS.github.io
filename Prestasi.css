@@ -745,14 +745,14 @@ footer {
           width: 10px;
         }
       
-        footer .Links a {
-          color: white;
-          padding: 0.7rem 0.5rem;
-        }
-      
-        .Garis {
-          font-size: 70%;
-        }
+          footer .Links a {
+    color: white;
+    padding: 0rem 0rem;
+  }
+
+  .Garis {
+    font-size: 60%;
+  }
 
         .Jadul h1 {
             padding: 10px;
