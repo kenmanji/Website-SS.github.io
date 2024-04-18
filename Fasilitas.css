@@ -899,5 +899,18 @@ footer {
     .Garis {
       font-size: 70%;
     }
+
+      .container .card .intro h1{
+      margin: 10px;
+      font-size: 35px;
+  }
+  
+  .intro p {
+      font-size: 17px;
+      max-width: 20rem;
+      margin: 20px;
+      visibility: hidden;
+      opacity: 0;
+  }
   
   }
