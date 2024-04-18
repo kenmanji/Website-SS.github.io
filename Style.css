@@ -1447,13 +1447,13 @@ footer .Credit p {
     width: 10px;
   }
 
-  footer .Links a {
+    footer .Links a {
     color: white;
-    padding: 0.7rem 0.5rem;
+    padding: 0rem 0rem;
   }
 
   .Garis {
-    font-size: 70%;
+    font-size: 60%;
   }
 
 }
