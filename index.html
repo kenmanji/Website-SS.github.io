@@ -43,57 +43,13 @@
 </head>
 
 <body>
-<!-- Bg isi -->
-<section class="Hero" id="Home">
-  <div data-aos="fade-right" data-aos-duration="500"><img src="Gedung Aula.png" width="100%" height="100%"/></div>
-  <main class="Content" data-aos="fade-right" data-aos-duration="500">
-    <h1> SMA SEDES SAPIENTIAE SEMARANG </h1>
-    <p> Sekolah katolik yayasan Marsudirini yang berlandaskan ajaran Santo Fransiskus Asisi, Magdalena Daemen, dan Bunda Maria Sapientiae. </p>
-    <p> "Mulailah dengan melakukan apa yang diperlukan; lalu lakukan apa yang mungkin untuk dilakukan; dan pada akhirnya kamu dapat melakukan hal yang kelihatannya mustahil."</p>
-    <a> - Fransiskus Asisi </a>
-    <button class="button" onclick="location.href='https://www.youtube.com/@SMASedesSapientiaeSemarang'">
-  Click to Visit
-  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-    <path
-      clip-rule="evenodd"
-      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-      fill-rule="evenodd"
-    ></path>
-  </svg>
-</button>
-  </main>
-</section>
-
-<section id="Visi" class="Visi">
-<div data-aos="zoom-in-right" data-aos-duration="500"><img src="Arti Logo.png" width="100%" height="100%"></div>
-<main class="visi" data-aos="fade-right" data-aos-duration="500">
-<h2>Visi</h2>
-<p>SMA MARSUDIRINI SEDES SAPIENTIAE MENGEMBANGKAN PRIBADI YANG CERDAS, BERIMAN PADA TUHAN, MENCINTAI SESAMA DAN ALAM CIPTAAN-NYA.</p>
-</main>
-</section>
-
-<section class="Misi" id="Misi">
-  <div data-aos="fade-right" data-aos-duration="500"><img src="Fransiskus Asisi.png" width="100%" height="100%"></div>
-  <main class="misi" data-aos="fade-right" data-aos-duration="500">
-  <h3>Misi</h3>
-  <p>1. MEWUJUDKAN SIKAP DAN PERILAKU YANG JUJUR DAN BIJAKSANA</p>
-  <p>2. MEWUJUDKAN SEKOLAH UNGGUL DALAM PRESTASI, KARAKTER, SENI BUDAYA DAN CINTA LINGKUNGAN</p>
-  <p>3. MEWUJUDKAN KEMAMPUAN DALAM MENYERAP, MENYELEKSI, DAN MENGOLAH INFORMASI</p>
-  <p>4. MEWUJUDKAN SEMANGAT KERJA KERAS, TEKUN, PANTANG MENYERAH DAN DISIPLIN UNTUK MERAIH PRESTASI</p>
-  </main>
-  <main class="mis" data-aos="fade-right" data-aos-duration="500">
-  <p>5. MEWUJUDKAN PELAYANAN YANG SIMPATIK, RAMAH DAN CEPAT</p>
-  <p>6. MEWUJUDKAN SEMANGAT PERSAUDARAAN DENGAN TUHAN, SESAMA DAN ALAM CIPTAAN</p>
-  <p>7. MEWUJUDKAN KEPEKAAN, KEPEDULIAN, DAN KESETIAKAWANAN</p>
-  <p>8. MEWUJUDKAN PEMBELAJARAN YANG AKTIF, KREATIF, INOVATIF, REFLEKTIF, MENYENANGKAN DAN MAMPU MENUMBUHKAN KECAKAPAN HIDUP</p>
-  </main>
-</section>
-
+  <!-- Menu -->
 <section class="Menu" id="Menu">
   <div class="Kontener">
     <div class="Konten">
       <div class="Gambar fade" data-aos="zoom-in" data-aos-duration="500">
-      <img src="Ini kami.jpeg" alt="">
+        <!-- Halaman Berita -->
+      <img src="Ini kami 2.png" alt="">
       <div class="Text">
       <h1>Berita</h1>
       <p>Menyediakan kabar dan berita terbaru seputar SMA Sedes Sapientiae Semarang</p>
@@ -103,8 +59,9 @@
       </div>
     </div>
 
+    <!-- Halaman Prestasi -->
     <div class="Gambar fade" data-aos="zoom-in" data-aos-duration="500">
-      <img src="Prestasi.png" alt="">
+      <img src="Prestasi 1.png" alt="">
       <div class="Text">
         <h1>Prestasi</h1>
         <p>Prestasi para pelajar SMA Sedes Sapientiae Semarang</p>
@@ -114,8 +71,9 @@
         </div>
       </div>
 
+      <!-- Halaman Profil -->
       <div class="Gambar fade" data-aos="zoom-in" data-aos-duration="500">
-        <img src="Profil Guru.png" alt="">
+        <img src="Profil 1.png" alt="">
         <div class="dex">
           <h1>Profil Guru dan Karyawan</h1>
           <p>Menyediakan kabar dan berita terbaru seputar SMA Sedes Sapientiae Semarang</p>
@@ -125,6 +83,7 @@
           </div>
         </div>
 
+  <!-- Halaman Fasilitas -->
   <div class="Gambar fade" data-aos="zoom-in" data-aos-duration="500">
     <img src="Kapel.png" alt="">
     <div class="Text">
@@ -140,9 +99,11 @@
   </div>
   </div>
 
+  <!-- Tombol Next dan Back -->
   <a class="Prev" onClick="nextslide(-1)">&#10094;</a>
   <a class="Next" onClick="nextslide(1)">&#10095;</a>
 
+  <!-- Animasi pergantian halaman -->
   <div class="Page">
     <span class="dot" onClick="dotslide(1)"></span>
     <span class="dot" onClick="dotslide(2)"></span>
@@ -190,13 +151,70 @@
   </script>
 </section>
 
+<!-- Home -->
+<section class="Hero" id="Home">
+  <!-- Gambar -->
+  <div data-aos="fade-right" data-aos-duration="500"><img src="Gedung Aula.png" width="100%" height="100%"/></div> 
+  <!-- Tulisan -->
+  <main class="Content" data-aos="fade-right" data-aos-duration="500">
+    <h1> SMA SEDES SAPIENTIAE SEMARANG </h1>
+    <p> Sekolah katolik yayasan Marsudirini yang berlandaskan ajaran Santo Fransiskus Asisi, Magdalena Daemen, dan Bunda Maria Sapientiae. </p>
+    <p> "Mulailah dengan melakukan apa yang diperlukan; lalu lakukan apa yang mungkin untuk dilakukan; dan pada akhirnya kamu dapat melakukan hal yang kelihatannya mustahil."</p>
+    <a> - Fransiskus Asisi </a>
+    <!-- Button -->
+    <button class="button" onclick="location.href='https://www.youtube.com/@SMASedesSapientiaeSemarang'">
+  Click to Visit
+  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+    <path
+      clip-rule="evenodd"
+      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+      fill-rule="evenodd"
+    ></path>
+  </svg>
+</button>
+  </main>
+</section>
+
+
+<!-- Visi -->
+<section id="Visi" class="Visi">
+<div data-aos="zoom-in-right" data-aos-duration="500"><img src="Arti Logo.png" width="100%" height="100%"></div>
+<main class="visi" data-aos="fade-right" data-aos-duration="500">
+<h2>Visi</h2>
+<p>SMA MARSUDIRINI SEDES SAPIENTIAE MENGEMBANGKAN PRIBADI YANG CERDAS, BERIMAN PADA TUHAN, MENCINTAI SESAMA DAN ALAM CIPTAAN-NYA.</p>
+</main>
+</section>
+
+<!-- Misi -->
+<section class="Misi" id="Misi">
+  <!-- Gambar -->
+  <div data-aos="fade-right" data-aos-duration="500"><img src="Fransiskus Asisi.png" width="100%" height="100%"></div>
+  <!-- Tulisan -->
+  <main class="misi" data-aos="fade-right" data-aos-duration="500">
+  <h3>Misi</h3>
+  <p>1. MEWUJUDKAN SIKAP DAN PERILAKU YANG JUJUR DAN BIJAKSANA</p>
+  <p>2. MEWUJUDKAN SEKOLAH UNGGUL DALAM PRESTASI, KARAKTER, SENI BUDAYA DAN CINTA LINGKUNGAN</p>
+  <p>3. MEWUJUDKAN KEMAMPUAN DALAM MENYERAP, MENYELEKSI, DAN MENGOLAH INFORMASI</p>
+  <p>4. MEWUJUDKAN SEMANGAT KERJA KERAS, TEKUN, PANTANG MENYERAH DAN DISIPLIN UNTUK MERAIH PRESTASI</p>
+  </main>
+  <main class="mis" data-aos="fade-right" data-aos-duration="500">
+  <p>5. MEWUJUDKAN PELAYANAN YANG SIMPATIK, RAMAH DAN CEPAT</p>
+  <p>6. MEWUJUDKAN SEMANGAT PERSAUDARAAN DENGAN TUHAN, SESAMA DAN ALAM CIPTAAN</p>
+  <p>7. MEWUJUDKAN KEPEKAAN, KEPEDULIAN, DAN KESETIAKAWANAN</p>
+  <p>8. MEWUJUDKAN PEMBELAJARAN YANG AKTIF, KREATIF, INOVATIF, REFLEKTIF, MENYENANGKAN DAN MAMPU MENUMBUHKAN KECAKAPAN HIDUP</p>
+  </main>
+</section>
+
+<!-- Kontak -->
 <section class="Kontak" id="Kontak">
   <h1 data-aos="zoom-in-down" data-aos-duration="500"></h1data-aos> Kontak Kami </h1>
   <p data-aos="zoom-in-down" data-aos-duration="500"></pdata-aos> Hubungi kami untuk informasi lainnya</p>
 
+  <!-- Google Map -->
   <div class="row" data-aos="zoom-in-up" data-aos-duration="500">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.0856451158193!2d110.4300239735667!3d-6.999195668548419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708dd438dac9b9%3A0xcbcf2db4d47bdb41!2sSMA%20MARSUDIRINI%20SEDES%20SAPIENTIAE%20KOTA%20SEMARANG!5e0!3m2!1sid!2sid!4v1712900203840!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-
+ 
+    <!-- Informasi Kontak -->
       <div class="form"> 
       <a> Hubungi Kami</a>
       <div class="input-group">
@@ -218,13 +236,16 @@
   </div>
 </section>
 
+<!-- Footer -->
 <footer>
   <div class="Ikuti">Ikuti Kami</div>
+  <!-- Link Medsos -->
   <div class="Sosial">
     <a href="https://www.instagram.com/sedesku/?igsh=bHJvYml5eHlmOHhs"><i data-feather="instagram"></i></a>
     <a href="https://www.facebook.com/share/D9Q6KCkARXcPUWUB/?mibextid=qi2Omg"><i data-feather="facebook"></i></a>
     <a href="https://www.youtube.com/@SMASedesSapientiaeSemarang"><i data-feather="youtube"></i></a>
 
+    <!-- Navigation -->
     <div class="Links">
      <a href="#Home">Home</a>
      <a href="#Visi">Visi</a>
@@ -234,6 +255,7 @@
 
      <div class="Garis">-------------------------------------------------------------------------------------------------------------------</div>
 
+     <!-- Credit -->
      <div class="Credit">
       <p>Created by <a href="https://smasedes-smg.sch.id/">SMA Sedes Sapientiae</a>. | &copy; 2024.</p>
      </div>
