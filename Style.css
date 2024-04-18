@@ -1351,7 +1351,7 @@ footer .Credit p {
   }
 
   .Misi div {
-    margin-left: 11rem;
+    margin-left: 10.5rem;
   }
 
   .Menu img {
@@ -1470,5 +1470,10 @@ footer .Credit p {
   .Garis {
     font-size: 60%;
   }
+
+  footer .Credit {
+    font-size: 0.7rem;
+  }
+  
 
 }
