@@ -172,6 +172,7 @@ body {
   align-items: center;
   color: white;
   position: relative;
+  margin-top: -3rem;
 }
 
 .Hero::after {
@@ -417,40 +418,31 @@ margin-top: 0;
 
 .Menu {
   font-family: "poppins", sans-serif;
-  min-height: 130vh;
   display: block;
   color: white;
   position: relative;
 }
 
-.Menu::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 20%;
-  bottom: 0%;
-  background: linear-gradient(0deg, #ffffff 1%, #016fbe00 0%);
-}
 
 .Kontener {
   padding: 40px 0 0 0;
 }
 
 .Konten {
-  max-width: 1000px;
+  max-width: 1270px;
   position: relative;
   margin: auto;
 }
 
 .Gambar {
   display: none;
+  height: 25rem;
 }
 
 .Text {
   width: 100%;
-  height: 90%;
-  margin-top: 4rem;
+  height: 100%;
+  margin-top: 3rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -465,9 +457,8 @@ margin-top: 0;
 .Text h1 {
 font-size: 5rem;
 color: white;
-margin-top: 9rem;
-margin-left: 5rem;
-margin-bottom: 10px;
+margin-top: 3rem;
+margin-left: 9rem;
 text-align: left;
 }
 
@@ -478,13 +469,13 @@ text-align: left;
   margin-bottom: 10px;
   justify-content: baseline;
   text-align: left;
-  margin-left: 5rem;
+  margin-left: 9rem;
   max-width: 25rem;
   }
 
   .dex {
     width: 100%;
-    height: 90%;
+    height: 100%;
     margin-top: 4rem;
     position: absolute;
     top: 0;
@@ -500,8 +491,8 @@ text-align: left;
   .dex h1 {
   font-size: 3rem;
   color: white;
-  margin-top: 10rem;
-  margin-left: 5rem;
+  margin-top: 3rem;
+  margin-left: 9rem;
   margin-bottom: 10px;
   line-height: 1;
   text-align: left;
@@ -515,23 +506,23 @@ text-align: left;
     margin-bottom: 10px;
     justify-content: baseline;
     text-align: left;
-    margin-left: 5rem;
+    margin-left: 9rem;
     max-width: 25rem;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     }
 
 .Menu img {
   vertical-align: middle;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   margin-top: 7rem;
   background-image: linear-gradient(to top, #000 40%, transparent);
 }
 
 .Menu a {
 display: flex;
-margin-bottom: 100rem; 
+margin-bottom: 100rem;
+margin-left: -1rem; 
 }
 
 .Prev {
@@ -546,6 +537,7 @@ margin-bottom: 100rem;
   border-radius: 10px 10px 10px 10px;
   user-select: none;
   background-color: rgba(0, 0, 0, 0.8);
+  margin-left: -1rem;
 } 
 
 .Next {
@@ -574,8 +566,8 @@ margin-bottom: 100rem;
 }
 
 .Kontener .Konten .Text button {
-  margin-top: 1rem;
-  margin-left: 5rem;
+  margin-top: 0.5rem;
+  margin-left: 9rem;
   display: inline-block;
   border-radius: 100px;
   background-color: #3d405b;
@@ -617,8 +609,8 @@ margin-bottom: 100rem;
 
 
  .Kontener .Konten .dex button {
-  margin-top: 1rem;
-  margin-left: 5rem;
+  margin-top: 0.5rem;
+  margin-left: 9rem;
   display: inline-block;
   border-radius: 100px;
   background-color: #3d405b;
@@ -695,25 +687,6 @@ margin-bottom: 100rem;
 .Page {
   text-align: center;
   padding-top: 20px;
-}
-
-.Page .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin-left: 2px;
-  background-color: #bbb;
-  display: inline-block;
-  transition: background-color 0.6 ease;
-  border-radius: 50%;
-}
-
-.Page .active {
-  background-color: #717171;
-}
-
-.Page .dot:hover {
-  background-color: #717171;
 }
 
 .Kontak {
@@ -847,14 +820,11 @@ footer .Credit p {
 
 /* PC */
 @media (max-width : 1280px) {
-  .Menu {
-    min-height: 95vh;
-  }
 
   .Menu img {
-    width: 100%;
+    width: 101.6%;
     height: 100%;
-    margin-left: 0rem;
+    margin-left: -1rem;
     margin-top: 3rem;
   }
 
@@ -868,6 +838,52 @@ footer .Credit p {
     margin-top: 3.9rem;
     margin-bottom: -1.5rem;
   }
+
+  .Text {
+    width: 101.6%;
+    margin-left: -1rem;
+  }
+
+  .dex {
+    width: 101.6%;
+    margin-left: -1rem;
+  }
+
+  .Menu a {
+    display: flex;
+    margin-top: 1rem;
+    }
+    
+    .Prev {
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      width: auto;
+      padding: 14px;
+      color:white;
+      font-weight: 18px;
+      transition: 0.6s ease;
+      border-radius: 10px 10px 10px 10px;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin-left: 0rem;
+      margin-top: 10rem;
+    } 
+    
+    .Next {
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      width: auto;
+      padding: 14px;
+      color:white;
+      font-weight: 18px;
+      transition: 0.6s ease;
+      border-radius: 10px 10px 10px 10px ;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      right: 0;
+    }
 }
 
 @media (max-width : 1100px) {
@@ -961,45 +977,38 @@ footer .Credit p {
   .Menu a {
     margin-left: 3rem;
     margin-right: 3.5rem;
-    margin-top: -1rem;
-  }
-
-  .Menu {
-    min-height: 115vh;
+    margin-top: 1rem;
   }
 
   .Menu img {
-    width: 90%;
-    height: 90%;
-    margin-left: 3rem;
+    width: 101.6%;
+    height: 80%;
     margin-top: 2rem;
   }
 
   .Text {
-    width: 90%;
-    height: 90%;
-    margin-left: 3rem;
+    width: 101.6%;
+    height: 80%;
     margin-top: 4rem;
   }
 
   .dex {
-    width: 90%;
-    height: 90%;
-    margin-left: 3rem;
+    width: 101.6%;
+    height: 80%;
     margin-top: 4rem;
   }
 
   .Text h1 {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 
   .dex h1 {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 
   .Prev {
     margin-left: 3.7rem;
-    margin-top: 0.7rem;
+    margin-top: -1rem;
   } 
 
   .Next {
@@ -1069,8 +1078,9 @@ footer .Credit p {
 }
 
 .Hero {
+  min-height: 88vh;
   display: block;
-  min-height: 85vh;
+  margin-top: -10rem;
 }
 
 .Hero::after {
@@ -1166,58 +1176,59 @@ footer .Credit p {
 }
 
 .Menu img {
-  margin-top: 16rem;
-  margin-left: 2.5rem;
+  margin-top: 2.8rem;
+  margin-left: 0rem;
+  width: 100%;
 }
 
 .Text {
-  width: 90%;
-  height: 51%;
-  margin-left: 2.5rem;
-  margin-top: 20rem;
+  width: 100%;
+  height: 51.1%;
+  margin-left: 0rem;
+  margin-top: 10rem;
 }
 
 .dex {
-  width: 90%;
-  height: 51%;
-  margin-left: 2.5rem;
-  margin-top: 20rem;
+  width: 100%;
+  height: 51.1%;
+  margin-left: 0rem;
+  margin-top: 10rem;
 }
 
 .Text h1 {
-  margin-top: 2rem;
+  margin-top: -4rem;
   font-size: 3rem;
-  margin-left: 3rem;
+  margin-left: 6rem;
 }
 
 .Text p {
   margin-top: 0rem;
   font-size: 1rem;
-  margin-left: 3rem;
+  margin-left: 6rem;
 }
 
 .Kontener .Konten .Text button {
-  margin-left: 2.7rem;
+  margin-left: 5.5rem;
 }
 
 .dex h1 {
-  margin-top: 1rem;
-  font-size: 3rem;
-  margin-left: 3rem;
+  margin-top: -4rem;
+  font-size: 2rem;
+  margin-left: 6rem;
 }
 
 .dex p {
   margin-top: 0rem;
   font-size: 1rem;
-  margin-left: 3rem;
+  margin-left: 6rem;
 }
 
 .Kontener .Konten .dex button {
-  margin-left: 2.7rem;
+  margin-left: 5.5rem;
 }
 
 .Menu a {
-  margin-top: -4rem;
+  margin-top: 0rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -1264,7 +1275,8 @@ footer .Credit p {
   }
 
   .Hero {
-    min-height: 80vh;
+    margin-top: -18rem;
+    min-height: 77vh;
   }
 
   .Hero .Content h1 {
@@ -1343,48 +1355,50 @@ footer .Credit p {
   }
 
   .Menu img {
-    margin-top: 10rem;
-    margin-left: 1.5rem;
+    margin-top: 0rem;
+    width: 100%;
+    height: 50%;
   }
 
   .Menu a {
-    margin-top: 5rem;
+    margin-top: -5rem;
+    margin-left: 1rem;
   }
 
   .Prev {
     margin-left: 2.5rem;
-    margin-top: 15rem;
+    margin-top: 0rem;
+    padding: 7px;
   } 
   
   .Next {
     margin-right: 2.3rem;
     margin-top: 15rem;
+    padding: 7px;
   } 
 
   .Text {
-    width: 90%;
+    width: 100%;
+    margin-top: 0rem;
     height: 51%;
-    margin-left: 1.5rem;
-    margin-top: 13rem;
   }
   
   .dex {
-    width: 90%;
-    height: 51%;
-    margin-left: 1.5rem;
-    margin-top: 13rem;
+    width: 100%;
+    height: 50%;
+    margin-top: 0rem;
   }
   
   .Text h1 {
-    margin-top: 0rem;
+    margin-top: 2rem;
     font-size: 2rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
   
   .Text p {
     margin-top: 0rem;
-    font-size: 0.7rem;
-    margin-left: 2rem;
+    font-size: 0.6rem;
+    margin-left: 4rem;
     max-width: 15rem;
   }
   
@@ -1393,21 +1407,22 @@ footer .Credit p {
   }
   
   .dex h1 {
-    margin-top: 0rem;
-    font-size: 2rem;
-    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    margin-left: 4rem;
+    max-width: 20rem;
   }
   
   .dex p {
     margin-top: 0rem;
-    font-size: 0.7rem;
-    margin-left: 2rem;
+    font-size: 0.6rem;
+    margin-left: 4rem;
     max-width: 15rem;
   }
   
   .Kontener .Konten .Text button {
     margin-top: 0rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
     font-size: 6px;
     padding: 7px;
     width: 60px;
@@ -1415,7 +1430,7 @@ footer .Credit p {
    
    .Kontener .Konten .dex button {
     margin-top: 0rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
     font-size: 6px;
     padding: 7px;
     width: 60px;
@@ -1447,7 +1462,7 @@ footer .Credit p {
     width: 10px;
   }
 
-    footer .Links a {
+  footer .Links a {
     color: white;
     padding: 0rem 0rem;
   }
