@@ -912,5 +912,9 @@ footer {
       visibility: hidden;
       opacity: 0;
   }
+
+      footer .Credit {
+    font-size: 0.7rem;
+  }
   
   }
