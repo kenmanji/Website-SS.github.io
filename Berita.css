@@ -759,4 +759,8 @@ footer {
         font-size: 2rem;
         width: 20rem;
         }
+
+    footer .Credit {
+    font-size: 0.7rem;
+  }
     }
