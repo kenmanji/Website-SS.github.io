@@ -7,24 +7,13 @@ document.querySelector ('#hamburger-menu').onclick = (e) => {
 };
 
 const searchForm = document.querySelector('.Search-form');
-const searchBox = document.querySelector('#search-box');
 
-document.querySelector('#Search-button').onclick = (e) => {
-    searchForm.classList.toggle('active');
-    searchBox.focus();
-    e.preventDefault();
-};
 
 //klik luar side bar hilangkan menu
-const hm = document.querySelector ('#hamburger-menu');
-const sb = document.querySelector('#Search-button');
+const hamburger = document.querySelector ('#hamburger-menu');
 document.addEventListener('click', function(e) {
-    if(!hm.contains(e.target) && !Nav.contains(e.target)) {
+    if(!hamburger.contains(e.target) && !Nav.contains(e.target)) {
         Nav.classList.remove('active');
-    }
-
-    if(!sb.contains(e.target) && !Nav.contains(e.target)) {
-        searchForm.classList.remove('active');
     }
 });
 
