@@ -816,5 +816,9 @@ footer {
     .hero a {
         font-size: 1rem;
     }
+
+    footer .Credit {
+    font-size: 0.7rem;
+  }
     }
   
