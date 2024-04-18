@@ -770,6 +770,10 @@ footer {
             font-size: 2rem;
             width: 20rem;
             }
+
+        .card img {
+            margin-left: 7rem;
+          }
         }
       
   
